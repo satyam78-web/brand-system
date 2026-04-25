@@ -1,0 +1,467 @@
+/* ============================================================
+   PERSONAL BRAND TOKENS
+   Source: TaskMaster design system (Abacus)
+   Usage: Add <link rel="stylesheet" href="brand-tokens.css">
+          to any app or website to share this design system.
+
+   Two themes included:
+   - [data-theme="light"]  → TaskMaster exact match
+   - [data-theme="dark"]   → Dark navy variant (same palette, inverted)
+
+   Default is light. To use dark mode on a page:
+     <html data-theme="dark">
+   Or toggle with JS:
+     document.documentElement.setAttribute('data-theme', 'dark')
+============================================================ */
+
+
+/* ── Google Fonts: Inter ─────────────────────────────────── */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+
+/* ══════════════════════════════════════════════════════════
+   LIGHT THEME  (TaskMaster exact match)
+══════════════════════════════════════════════════════════ */
+:root,
+[data-theme="light"] {
+
+  /* ── Core surfaces ── */
+  --background:          0 0% 100%;           /* #ffffff — page bg */
+  --foreground:          222.2 84% 4.9%;      /* #0a0f1e — body text */
+  --card:                0 0% 100%;           /* #ffffff — card bg */
+  --card-foreground:     222.2 84% 4.9%;
+  --popover:             0 0% 100%;
+  --popover-foreground:  222.2 84% 4.9%;
+
+  /* ── Brand primary (dark navy) ── */
+  --primary:             222.2 47.4% 11.2%;   /* #111827-ish dark navy */
+  --primary-foreground:  210 40% 98%;         /* #f8fafc near-white */
+  --primary-hex:         #1a2340;             /* for use in gradients */
+
+  /* ── Secondary / muted ── */
+  --secondary:           210 40% 96.1%;       /* #f0f4f8 light blue-grey */
+  --secondary-foreground: 222.2 47.4% 11.2%;
+  --muted:               210 40% 96.1%;
+  --muted-foreground:    215.4 16.3% 46.9%;   /* #6b7a99 mid grey */
+
+  /* ── Accent (hover states, selected rows) ── */
+  --accent:              210 40% 96.1%;
+  --accent-foreground:   222.2 47.4% 11.2%;
+
+  /* ── Borders & inputs ── */
+  --border:              214.3 31.8% 91.4%;   /* #dde3ed subtle border */
+  --input:               214.3 31.8% 91.4%;
+  --ring:                222.2 84% 4.9%;
+
+  /* ── Semantic: destructive ── */
+  --destructive:         0 84.2% 60.2%;       /* #f05252 red */
+  --destructive-foreground: 210 40% 98%;
+
+  /* ── Border radius ── */
+  --radius:              0.5rem;              /* 8px — TaskMaster standard */
+  --radius-sm:           calc(var(--radius) - 4px);   /* 4px */
+  --radius-md:           calc(var(--radius) - 2px);   /* 6px */
+  --radius-lg:           var(--radius);               /* 8px */
+  --radius-xl:           calc(var(--radius) + 4px);   /* 12px */
+  --radius-2xl:          calc(var(--radius) + 8px);   /* 16px */
+  --radius-full:         9999px;
+
+  /* ── Status / tag accent colours ── */
+  /* These are used for badges, tags, category indicators */
+  --color-blue:          #2563eb;
+  --color-blue-light:    #dbeafe;
+  --color-blue-text:     #1d4ed8;
+
+  --color-green:         #16a34a;
+  --color-green-light:   #dcfce7;
+  --color-green-text:    #15803d;
+
+  --color-orange:        #f97316;
+  --color-orange-light:  #ffedd5;
+  --color-orange-text:   #c2410c;
+
+  --color-red:           #ef4444;
+  --color-red-light:     #fee2e2;
+  --color-red-text:      #b91c1c;
+
+  --color-purple:        #9333ea;
+  --color-purple-light:  #f3e8ff;
+  --color-purple-text:   #7e22ce;
+
+  --color-amber:         #f59e0b;
+  --color-amber-light:   #fef3c7;
+  --color-amber-text:    #92400e;
+
+  --color-cyan:          #06b6d4;
+  --color-cyan-light:    #cffafe;
+  --color-cyan-text:     #0e7490;
+
+  --color-gray:          #6b7280;
+  --color-gray-light:    #f3f4f6;
+  --color-gray-text:     #374151;
+
+  /* ── Typography ── */
+  --font-sans:           'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono:           ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
+
+  --text-xs:             0.75rem;    /* 12px */
+  --text-sm:             0.875rem;   /* 14px */
+  --text-base:           1rem;       /* 16px */
+  --text-lg:             1.125rem;   /* 18px */
+  --text-xl:             1.25rem;    /* 20px */
+  --text-2xl:            1.5rem;     /* 24px */
+  --text-3xl:            1.875rem;   /* 30px */
+  --text-4xl:            2.25rem;    /* 36px */
+
+  --font-normal:         400;
+  --font-medium:         500;
+  --font-semibold:       600;
+  --font-bold:           700;
+
+  --leading-tight:       1.25;
+  --leading-normal:      1.5;
+  --leading-relaxed:     1.625;
+
+  /* ── Spacing scale ── */
+  --space-1:             0.25rem;    /* 4px  */
+  --space-2:             0.5rem;     /* 8px  */
+  --space-3:             0.75rem;    /* 12px */
+  --space-4:             1rem;       /* 16px */
+  --space-5:             1.25rem;    /* 20px */
+  --space-6:             1.5rem;     /* 24px */
+  --space-8:             2rem;       /* 32px */
+  --space-10:            2.5rem;     /* 40px */
+  --space-12:            3rem;       /* 48px */
+  --space-16:            4rem;       /* 64px */
+
+  /* ── Shadows ── */
+  --shadow-sm:           0 1px 2px 0 rgba(0,0,0,0.05);
+  --shadow-md:           0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -2px rgba(0,0,0,0.1);
+  --shadow-lg:           0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+  --shadow-xl:           0 20px 25px -5px rgba(0,0,0,0.1), 0 8px 10px -6px rgba(0,0,0,0.1);
+  --shadow-2xl:          0 25px 50px -12px rgba(0,0,0,0.25);
+
+  /* ── Transitions ── */
+  --transition-fast:     150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base:     200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow:     300ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  /* ── Z-index scale ── */
+  --z-base:    1;
+  --z-overlay: 10;
+  --z-modal:   50;
+  --z-toast:   100;
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   DARK THEME  (Dark navy — same palette family, inverted)
+   Inspired by TaskMaster's navy primary, taken into full dark.
+   Think: high-end fintech dashboard. Deep navy, not pure black.
+══════════════════════════════════════════════════════════ */
+[data-theme="dark"] {
+
+  /* ── Core surfaces ── */
+  --background:          222 47% 7%;          /* #08101e deep navy-black */
+  --foreground:          210 40% 96%;         /* #f0f4f8 near-white */
+  --card:                222 44% 10%;         /* #0e1829 dark card */
+  --card-foreground:     210 40% 96%;
+  --popover:             222 44% 10%;
+  --popover-foreground:  210 40% 96%;
+
+  /* ── Brand primary (mid-navy, same hue as light primary) ── */
+  --primary:             210 40% 96%;         /* inverted — light text on dark */
+  --primary-foreground:  222.2 47.4% 11.2%;   /* dark navy — for buttons */
+  --primary-hex:         #e8eef8;
+
+  /* ── Secondary / muted ── */
+  --secondary:           222 40% 14%;         /* #111e33 dark secondary */
+  --secondary-foreground: 210 40% 90%;
+  --muted:               222 40% 14%;
+  --muted-foreground:    215 20% 55%;         /* #7d8faa softer text */
+
+  /* ── Accent ── */
+  --accent:              222 40% 16%;         /* slightly lighter than secondary */
+  --accent-foreground:   210 40% 96%;
+
+  /* ── Borders & inputs ── */
+  --border:              222 35% 18%;         /* #1e2d47 subtle dark border */
+  --input:               222 35% 18%;
+  --ring:                215 60% 55%;         /* blue focus ring */
+
+  /* ── Semantic: destructive ── */
+  --destructive:         0 72% 51%;           /* slightly dimmed red */
+  --destructive-foreground: 210 40% 98%;
+
+  /* ── Border radius — same as light ── */
+  --radius:              0.5rem;
+  --radius-sm:           calc(var(--radius) - 4px);
+  --radius-md:           calc(var(--radius) - 2px);
+  --radius-lg:           var(--radius);
+  --radius-xl:           calc(var(--radius) + 4px);
+  --radius-2xl:          calc(var(--radius) + 8px);
+  --radius-full:         9999px;
+
+  /* ── Status / tag accent colours (slightly adjusted for dark) ── */
+  --color-blue:          #3b82f6;
+  --color-blue-light:    rgba(59, 130, 246, 0.15);
+  --color-blue-text:     #93c5fd;
+
+  --color-green:         #22c55e;
+  --color-green-light:   rgba(34, 197, 94, 0.15);
+  --color-green-text:    #86efac;
+
+  --color-orange:        #f97316;
+  --color-orange-light:  rgba(249, 115, 22, 0.15);
+  --color-orange-text:   #fdba74;
+
+  --color-red:           #f87171;
+  --color-red-light:     rgba(248, 113, 113, 0.15);
+  --color-red-text:      #fca5a5;
+
+  --color-purple:        #a855f7;
+  --color-purple-light:  rgba(168, 85, 247, 0.15);
+  --color-purple-text:   #d8b4fe;
+
+  --color-amber:         #fbbf24;
+  --color-amber-light:   rgba(251, 191, 36, 0.15);
+  --color-amber-text:    #fde68a;
+
+  --color-cyan:          #22d3ee;
+  --color-cyan-light:    rgba(34, 211, 238, 0.15);
+  --color-cyan-text:     #a5f3fc;
+
+  --color-gray:          #9ca3af;
+  --color-gray-light:    rgba(156, 163, 175, 0.12);
+  --color-gray-text:     #d1d5db;
+
+  /* ── Shadows (stronger for dark bg) ── */
+  --shadow-sm:           0 1px 3px 0 rgba(0,0,0,0.3);
+  --shadow-md:           0 4px 6px -1px rgba(0,0,0,0.4), 0 2px 4px -2px rgba(0,0,0,0.3);
+  --shadow-lg:           0 10px 15px -3px rgba(0,0,0,0.5), 0 4px 6px -4px rgba(0,0,0,0.4);
+  --shadow-xl:           0 20px 25px -5px rgba(0,0,0,0.5), 0 8px 10px -6px rgba(0,0,0,0.4);
+  --shadow-2xl:          0 25px 50px -12px rgba(0,0,0,0.7);
+
+  /* ── Typography, spacing, transitions — same as light ── */
+  --font-sans:           'Inter', ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --font-mono:           ui-monospace, 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
+  --text-xs:             0.75rem;
+  --text-sm:             0.875rem;
+  --text-base:           1rem;
+  --text-lg:             1.125rem;
+  --text-xl:             1.25rem;
+  --text-2xl:            1.5rem;
+  --text-3xl:            1.875rem;
+  --text-4xl:            2.25rem;
+  --font-normal:         400;
+  --font-medium:         500;
+  --font-semibold:       600;
+  --font-bold:           700;
+  --leading-tight:       1.25;
+  --leading-normal:      1.5;
+  --leading-relaxed:     1.625;
+  --space-1:             0.25rem;
+  --space-2:             0.5rem;
+  --space-3:             0.75rem;
+  --space-4:             1rem;
+  --space-5:             1.25rem;
+  --space-6:             1.5rem;
+  --space-8:             2rem;
+  --space-10:            2.5rem;
+  --space-12:            3rem;
+  --space-16:            4rem;
+  --transition-fast:     150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base:     200ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow:     300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --z-base:    1;
+  --z-overlay: 10;
+  --z-modal:   50;
+  --z-toast:   100;
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   BASE STYLES
+   Apply tokens to HTML elements so any app gets sensible
+   defaults just by linking this file.
+══════════════════════════════════════════════════════════ */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  -webkit-text-size-adjust: 100%;
+  font-feature-settings: normal;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-sans);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  color: hsl(var(--foreground));
+  background-color: hsl(var(--background));
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Scrollbar ── */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: var(--radius-full);
+}
+::-webkit-scrollbar-thumb:hover { background: hsl(var(--muted-foreground)); }
+
+
+/* ══════════════════════════════════════════════════════════
+   UTILITY CLASSES
+   Ready-to-use classes that consume the tokens above.
+   Use these in any HTML file without Tailwind.
+══════════════════════════════════════════════════════════ */
+
+/* ── Surfaces ── */
+.bg-base    { background-color: hsl(var(--background)); }
+.bg-card    { background-color: hsl(var(--card)); }
+.bg-muted   { background-color: hsl(var(--muted)); }
+.bg-accent  { background-color: hsl(var(--accent)); }
+
+/* ── Text ── */
+.text-base    { color: hsl(var(--foreground)); }
+.text-muted   { color: hsl(var(--muted-foreground)); }
+.text-primary { color: hsl(var(--primary)); }
+
+/* ── Borders ── */
+.border-base  { border: 1px solid hsl(var(--border)); }
+.border-muted { border: 1px solid hsl(var(--muted)); }
+.divide-base > * + * { border-top: 1px solid hsl(var(--border)); }
+
+/* ── Radius ── */
+.rounded-sm  { border-radius: var(--radius-sm); }
+.rounded-md  { border-radius: var(--radius-md); }
+.rounded-lg  { border-radius: var(--radius-lg); }
+.rounded-xl  { border-radius: var(--radius-xl); }
+.rounded-2xl { border-radius: var(--radius-2xl); }
+.rounded-full { border-radius: var(--radius-full); }
+
+/* ── Shadows ── */
+.shadow-sm  { box-shadow: var(--shadow-sm); }
+.shadow-md  { box-shadow: var(--shadow-md); }
+.shadow-lg  { box-shadow: var(--shadow-lg); }
+.shadow-xl  { box-shadow: var(--shadow-xl); }
+
+/* ── Typography ── */
+.font-sans    { font-family: var(--font-sans); }
+.font-mono    { font-family: var(--font-mono); }
+.text-xs      { font-size: var(--text-xs); }
+.text-sm      { font-size: var(--text-sm); }
+.text-base    { font-size: var(--text-base); }
+.text-lg      { font-size: var(--text-lg); }
+.text-xl      { font-size: var(--text-xl); }
+.text-2xl     { font-size: var(--text-2xl); }
+.text-3xl     { font-size: var(--text-3xl); }
+.font-medium  { font-weight: var(--font-medium); }
+.font-semibold { font-weight: var(--font-semibold); }
+.font-bold    { font-weight: var(--font-bold); }
+
+/* ── Status badges ── */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: var(--font-medium);
+  line-height: 1.6;
+}
+.badge-blue   { background: var(--color-blue-light);   color: var(--color-blue-text); }
+.badge-green  { background: var(--color-green-light);  color: var(--color-green-text); }
+.badge-orange { background: var(--color-orange-light); color: var(--color-orange-text); }
+.badge-red    { background: var(--color-red-light);    color: var(--color-red-text); }
+.badge-purple { background: var(--color-purple-light); color: var(--color-purple-text); }
+.badge-amber  { background: var(--color-amber-light);  color: var(--color-amber-text); }
+.badge-gray   { background: var(--color-gray-light);   color: var(--color-gray-text); }
+
+/* ── Buttons ── */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-md);
+  border: 1px solid hsl(var(--border));
+  background: transparent;
+  color: hsl(var(--foreground));
+  font-size: var(--text-sm);
+  font-family: var(--font-sans);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  transition: background var(--transition-fast), border-color var(--transition-fast);
+  text-decoration: none;
+}
+.btn:hover   { background: hsl(var(--accent)); }
+.btn-primary {
+  background: hsl(var(--primary));
+  color: hsl(var(--primary-foreground));
+  border-color: hsl(var(--primary));
+}
+.btn-primary:hover { opacity: 0.9; }
+.btn-destructive {
+  background: hsl(var(--destructive));
+  color: hsl(var(--destructive-foreground));
+  border-color: hsl(var(--destructive));
+}
+
+/* ── Inputs ── */
+.input {
+  width: 100%;
+  padding: var(--space-2) var(--space-3);
+  border-radius: var(--radius-md);
+  border: 1px solid hsl(var(--input));
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+  font-size: var(--text-sm);
+  font-family: var(--font-sans);
+  outline: none;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+.input:focus {
+  border-color: hsl(var(--ring));
+  box-shadow: 0 0 0 2px hsl(var(--ring) / 0.2);
+}
+.input::placeholder { color: hsl(var(--muted-foreground)); }
+
+/* ── Card ── */
+.card {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--border));
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: var(--space-6);
+  color: hsl(var(--card-foreground));
+}
+
+
+/* ══════════════════════════════════════════════════════════
+   THEME TOGGLE HELPER
+   Add this script snippet to any app to wire up a toggle:
+
+   <button onclick="toggleTheme()">Toggle theme</button>
+   <script>
+     function toggleTheme() {
+       const html = document.documentElement
+       const current = html.getAttribute('data-theme') || 'light'
+       const next = current === 'light' ? 'dark' : 'light'
+       html.setAttribute('data-theme', next)
+       localStorage.setItem('theme', next)
+     }
+     // Restore on load
+     const saved = localStorage.getItem('theme') || 'light'
+     document.documentElement.setAttribute('data-theme', saved)
+   </script>
+══════════════════════════════════════════════════════════ */

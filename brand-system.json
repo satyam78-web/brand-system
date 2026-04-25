@@ -1,0 +1,207 @@
+{
+  "brand": {
+    "name": "AIforBusinessBanking",
+    "domain": "AIforBusinessBanking.com",
+    "tagline": "Re-architecting Business Banking with AI",
+    "signature": "AI Built - Human Directed",
+    "positioning": {
+      "description": "AI-native knowledge platform for business banking, SME banking, credit, risk, data, and banking transformation.",
+      "audience": [
+        "banking executives",
+        "business banking leaders",
+        "fintech operators",
+        "credit and risk professionals",
+        "SME banking leaders",
+        "banking transformation teams"
+      ],
+      "tone": [
+        "institutional",
+        "high-trust",
+        "editorial",
+        "strategic",
+        "operator-led",
+        "non-promotional"
+      ]
+    }
+  },
+  "design": {
+    "principles": [
+      "minimal",
+      "structured",
+      "clean hierarchy",
+      "high readability",
+      "no clutter",
+      "institutional not startup",
+      "AI should feel essential, not decorative"
+    ],
+    "color_usage": {
+      "primary": {
+        "name": "Deep navy",
+        "hex": "#1a2340",
+        "usage": "Main logo text, headings, footer backgrounds, serious institutional surfaces"
+      },
+      "background": {
+        "name": "White",
+        "hex": "#ffffff",
+        "usage": "Primary page background"
+      },
+      "light_surface": {
+        "name": "Light blue-grey",
+        "hex": "#f0f4f8",
+        "usage": "Cards, subtle sections, content backgrounds"
+      },
+      "accent": {
+        "name": "Purple",
+        "hex": "#9333ea",
+        "usage": "Sparing highlights, AI word accent, CTAs, small brand moments"
+      },
+      "muted_text": {
+        "name": "Muted grey",
+        "hex": "#6b7a99",
+        "usage": "Captions, metadata, secondary copy"
+      },
+      "avoid": [
+        "gradient-heavy UI",
+        "overly bright startup palettes",
+        "generic AI neon styling",
+        "excessive shadows"
+      ]
+    },
+    "typography": {
+      "primary_font": "Inter",
+      "usage": "Use Inter for UI, body text, navigation, cards, and most headings.",
+      "style": "Clean, modern, readable, structured.",
+      "avoid": [
+        "decorative fonts",
+        "playful fonts",
+        "overly stylised typography"
+      ]
+    },
+    "logo": {
+      "type": "wordmark",
+      "text": "AIforBusinessBanking",
+      "preferred_treatment": {
+        "AI": "May use purple accent",
+        "forBusinessBanking": "Use deep navy or near-black"
+      },
+      "rules": [
+        "Main logo should be a clean wordmark",
+        "Do not use generic AI icons",
+        "Do not use bank-building icons",
+        "Do not use brain or circuit icons",
+        "Do not use gradients in the main wordmark"
+      ]
+    },
+    "monogram": {
+      "preferred": "AI\u00d7BB",
+      "alternatives": [
+        "AI/BB",
+        "ABB",
+        "stacked AI over BB"
+      ],
+      "usage": [
+        "favicon",
+        "social avatar",
+        "compact UI",
+        "email signature icon",
+        "deck corner mark"
+      ],
+      "style": [
+        "Can be brighter than the main logo",
+        "Purple accent or purple gradient is acceptable for monogram only",
+        "Keep shape simple and modern",
+        "Rounded square or circular lockup preferred"
+      ]
+    },
+    "footer": {
+      "signature": "AI Built - Human Directed",
+      "usage": "Use as the standard footer signature across website, decks, reports, and brand moments."
+    }
+  },
+  "content": {
+    "style": {
+      "voice": [
+        "insight-driven",
+        "clear",
+        "strategic",
+        "non-hyped",
+        "operator-led",
+        "practical"
+      ],
+      "avoid": [
+        "generic AI hype",
+        "unsupported claims",
+        "fabricated metrics",
+        "overly promotional language",
+        "buzzword-heavy copy"
+      ]
+    },
+    "default_structure": {
+      "articles": [
+        "title",
+        "summary",
+        "topic",
+        "subtopics",
+        "key_insights",
+        "sections",
+        "tags",
+        "related_content",
+        "last_updated"
+      ],
+      "case_studies": [
+        "context",
+        "problem",
+        "constraints",
+        "solution",
+        "capabilities",
+        "outcome",
+        "evidence",
+        "industry",
+        "tags"
+      ]
+    },
+    "focus_areas": [
+      "business banking",
+      "SME banking",
+      "commercial lending",
+      "credit decisioning",
+      "risk and underwriting",
+      "data infrastructure",
+      "unstructured data",
+      "data annotation",
+      "RAG",
+      "decision systems",
+      "AI-native banking transformation"
+    ]
+  },
+  "ai_usage": {
+    "rules": [
+      "Ground outputs in business banking context",
+      "Do not hallucinate facts, case studies, or metrics",
+      "Prefer refusal or caveats over fabrication",
+      "Prioritise clarity and structure over creativity",
+      "Keep AI features purposeful and grounded in site content",
+      "Use the brand tone consistently across generated copy, UI, and recommendations"
+    ],
+    "default_instruction": "Use the AIforBusinessBanking brand system as the source of truth. Maintain a clean, structured, high-trust editorial style. Use deep navy as the primary identity color, purple sparingly as an accent, and the signature line 'AI Built - Human Directed' where appropriate."
+  },
+  "implementation_context": {
+    "site_stack": [
+      "static HTML",
+      "CSS",
+      "JavaScript",
+      "JSON content",
+      "Netlify hosting"
+    ],
+    "recommended_files": [
+      "brand-tokens.css",
+      "brand-system.json",
+      "content.json"
+    ],
+    "usage": [
+      "Attach this file when prompting Claude, ChatGPT, Framer, or other AI tools",
+      "Use this file as the structured brand reference for future Netlify Functions",
+      "Use brand-tokens.css as the visual execution layer"
+    ]
+  }
+}
