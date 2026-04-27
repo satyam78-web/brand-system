@@ -1,0 +1,73 @@
+<svg width="240" height="196" viewBox="0 0 240 196" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- S gradient: purple to indigo, top-left to bottom-right -->
+    <linearGradient id="gradS" x1="8" y1="14" x2="125" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#7c3aed"/>
+      <stop offset="55%"  stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#2563eb"/>
+    </linearGradient>
+    <!-- A gradient: slightly lighter/more blue treatment (like Finnotate A vs F) -->
+    <linearGradient id="gradA" x1="80" y1="14" x2="230" y2="180" gradientUnits="userSpaceOnUse">
+      <stop offset="0%"   stop-color="#6366f1" stop-opacity="0.92"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.88"/>
+    </linearGradient>
+  </defs>
+
+  <!-- ═══════════════════════════════════
+       S MARK
+       Built from 5 rectangular pieces
+       + diagonal terminal cuts on free ends
+  ═══════════════════════════════════ -->
+
+  <!-- Top horizontal bar
+       Diagonal cut on top-left corner (S stroke start) -->
+  <polygon
+    points="28,14 125,14 125,40 8,40 8,28"
+    fill="url(#gradS)"
+  />
+
+  <!-- Right vertical connector (upper half of S)
+       Connects top bar to middle bar on the right side -->
+  <rect x="99" y="40" width="26" height="44" fill="url(#gradS)"/>
+
+  <!-- Middle horizontal bar -->
+  <rect x="8" y="84" width="117" height="26" fill="url(#gradS)"/>
+
+  <!-- Left vertical connector (lower half of S)
+       Connects middle bar to bottom bar on the left side -->
+  <rect x="8" y="110" width="26" height="44" fill="url(#gradS)"/>
+
+  <!-- Bottom horizontal bar
+       Diagonal cut on bottom-right corner (S stroke end) -->
+  <polygon
+    points="8,154 107,154 125,168 125,180 8,180"
+    fill="url(#gradS)"
+  />
+
+  <!-- ═══════════════════════════════════
+       A MARK
+       Two diagonal parallelogram bars
+       sharing the same apex, + crossbar.
+       Overlaps the S on the right side.
+  ═══════════════════════════════════ -->
+
+  <!-- Left diagonal bar of A
+       Apex top: x=143–167, y=14
+       Foot bottom-left: x=80–104, y=180 -->
+  <polygon
+    points="143,14 167,14 104,180 80,180"
+    fill="url(#gradA)"
+  />
+
+  <!-- Right diagonal bar of A
+       Apex top: x=143–167, y=14
+       Foot bottom-right: x=206–230, y=180 -->
+  <polygon
+    points="143,14 167,14 230,180 206,180"
+    fill="url(#gradA)"
+  />
+
+  <!-- A crossbar (at approximately 53% height) -->
+  <rect x="134" y="92" width="42" height="16" fill="url(#gradA)"/>
+
+</svg>
